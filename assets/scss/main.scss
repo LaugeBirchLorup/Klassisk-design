@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  @apply w-full mx-auto max-w-[85%] md:max-w-[90%] lg:max-w-[95%];
+
+  .page-container {
+    max-width: 100%;
+  }
+}
