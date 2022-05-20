@@ -19,3 +19,29 @@
     max-width: 100%;
   }
 }
+body {
+  font-family: var(--defaultFont);
+  background: rgb(255, 60, 60);
+}
+@font-face {
+  font-family: "Uncut Sans";
+  src: url(@/fonts/UNCUT-SANS-BOLD.OTF) format("opentype");
+  src: url(@/fonts/UNCUT-SANS-BOLDOBLIQUE.OTF) format("opentype");
+  src: url(@/fonts/UNCUT-SANS-MEDIUM.OTF) format("opentype");
+  src: url(@/fonts/UNCUT-SANS-MEDIUMOBLIQUE.OTF) format("opentype");
+  src: url(@/fonts/UNCUT-SANS-REGULAR.OTF) format("opentype");
+  src: url(@/fonts/UNCUT-SANS-REGULAROBLIQUE.OTF) format("opentype");
+  src: url(@/fonts/UNCUT-SANS-SEMIBOLD.OTF) format("opentype");
+  src: url(@/fonts/UNCUT-SANS-SEMIBOLDOBLIQUE.OTF) format("opentype");
+}
+
+@font-face {
+  font-family: "Perpetua ";
+  src: url(@/fonts/PERPETUA_TITLING_MT_BOLD.TTF) format("opentype");
+  src: url(@/fonts/PERPETUA_TITLING_MT_LIGHT.TTF) format("truetype");
+}
+
+:root {
+  --defaultFont: Uncut-Sans, sans-serif;
+  --secondaryFont: Perpetua, sans-serif;
+}
