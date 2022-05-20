@@ -63,7 +63,7 @@ export default {
 
 <style lang="scss" scoped>
 .mobile-nav {
-  background: #f1f1f1;
+  background: #090909;
   z-index: -1;
   width: 100%;
 }

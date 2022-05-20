@@ -1,9 +1,12 @@
 <template>
-  <div class="h-24 page-container flex items-center w-full">
+  <div
+    class="h-24 page-container flex items-center w-full"
+    :class="{ activeText: isBurgerActive }"
+  >
     <MenuOverlay class="w-full h-screen" />
     <div class="flex items-center justify-start gap-3">
       <div
-        class="text-black h-navbox items-center cursor-pointer"
+        class="h-navbox items-center cursor-pointer"
         id="burger"
         :class="{ active: isBurgerActive }"
         @click="toggleMobileNavigation()"
@@ -15,7 +18,10 @@
             class="burger-button"
             title="Menu"
           >
-            <span class="burger-bar burger-bar--1 translate-y"></span>
+            <span
+              class="burger-bar burger-bar--1 translate-y"
+              :class="{ activeText: isBurgerActive }"
+            ></span>
             <span class="burger-bar burger-bar--2"></span>
             <span class="burger-bar burger-bar--3"></span>
           </button>
@@ -24,15 +30,16 @@
       <p class="hidden md:block">Menu</p>
     </div>
     <div class="logo justify-center w-full hidden md:flex">
-      <h1 class="text-black test">KLASSISK DESIGN</h1>
+      <h1 class="test">KLASSISK DESIGN</h1>
     </div>
     <div class="logo justify-center w-full flex md:hidden">
-      <h1 class="text-black test">K</h1>
+      <h1 class="test">K</h1>
     </div>
     <div class="kurv flex gap-3 items-center justify-end">
       <p class="hidden md:block">Kurv</p>
       <div
-        class="rounded-full h-8 w-8 border-solid border-2 border-black flex justify-center items-center"
+        :class="{ activeMenu: isBurgerActive }"
+        class="borderCircle rounded-full h-8 w-8 border-solid border-2 flex justify-center items-center"
       >
         <p>0</p>
       </div>
@@ -75,7 +82,9 @@ export default {
 button:focus {
   outline: 0;
 }
-
+.borderCircle {
+  border-color: black;
+}
 .burger-button {
   position: relative;
   height: 30px;
@@ -101,6 +110,14 @@ button:focus {
   transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
     opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
     background-color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.activeText {
+  color: #f1f1f1;
+  border-color: #f1f1f1 !important;
+}
+
+.activeMenu {
+  border-color: #f1f1f1;
 }
 
 .burger-bar--1 {
@@ -128,7 +145,7 @@ button:focus {
 }
 
 #burger.active .burger-bar {
-  background-color: #000;
+  background-color: #f1f1f1;
 }
 
 #burger.active .burger-bar--1 {
