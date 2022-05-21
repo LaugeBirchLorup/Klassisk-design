@@ -2,7 +2,39 @@
   <div
     ref="mobileNav"
     class="mobile-nav z-50 fixed top-0 right-0 bottom-0 left-0.25 transform h-full w-full translate-x-full bg-black"
-  ></div>
+  >
+    <div class="container page-container w-full h-full grid grid-cols-12 gap-8">
+      <div class="content_text col-start-2 col-span-4 m-auto">
+        <div class="bigger_menu__items text-5xl">
+          <ol>
+            <li>Shop</li>
+            <li>Istandsættelse</li>
+            <li>Kontakt</li>
+          </ol>
+        </div>
+        <div class="social-icons flex gap-3 mt-12">
+          <img src="~/assets/scss/instagram-white-logo.png" alt="" />
+          <img src="~/assets/scss/facebook-white-logo.png" alt="" />
+        </div>
+        <div class="smaller_menu__items mt-12">
+          <ol>
+            <li class="mb-3">Din Kurv</li>
+            <li class="mb-3">Kontakt Os</li>
+            <li class="mb-3">Legal</li>
+          </ol>
+        </div>
+      </div>
+      <figure
+        class="content_image items-center col-span-7 hidden md:flex mt-[7vh]"
+      >
+        <img
+          class="max-h-[85vh]"
+          src="~/assets/scss/MenuOverlayImage.png"
+          alt=""
+        />
+      </figure>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -64,7 +96,10 @@ export default {
 <style lang="scss" scoped>
 .mobile-nav {
   background: #090909;
-  z-index: -1;
   width: 100%;
+}
+
+.content_text {
+  text-decoration: none;
 }
 </style>

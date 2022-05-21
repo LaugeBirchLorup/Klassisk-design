@@ -40,7 +40,8 @@ export default {
 
 <style lang="scss" scoped>
 .removeImage {
-  display: none;
+  transition: opacity 0.2s;
+  opacity: 0; // set opacity property to 1, completely visible
 }
 .hero-text {
   position: absolute;

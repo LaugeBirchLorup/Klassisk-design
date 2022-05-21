@@ -27,7 +27,7 @@
           </button>
         </slot>
       </div>
-      <p class="hidden md:block">Menu</p>
+      <p class="menu_text hidden md:block">Menu</p>
     </div>
     <div class="logo justify-center w-full hidden md:flex">
       <h1 class="test">KLASSISK DESIGN</h1>
@@ -158,5 +158,17 @@ button:focus {
 
 #burger.active .burger-bar--3 {
   transform: rotate(-45deg);
+}
+
+.logo {
+  z-index: 100;
+}
+
+.kurv {
+  z-index: 100;
+}
+
+.menu_text {
+  z-index: 100;
 }
 </style>
