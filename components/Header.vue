@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-24 page-container flex items-center w-full"
+    class="h-24 page-container flex items-center w-full z-50"
     :class="{ activeText: isBurgerActive }"
   >
     <MenuOverlay class="w-full h-screen" />
