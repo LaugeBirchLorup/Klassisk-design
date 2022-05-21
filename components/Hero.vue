@@ -11,12 +11,12 @@
       />
     </figure>
     <h1
-      class="text-5xl leading-12 sm:text-7xl md:leading-[110px] text-white absolute hero-text"
+      class="text-4xl leading-12 md:text-5xl lg:text-7xl lg:leading-[110px] text-white absolute hero-text"
     >
       Udforsk istandsatte danske møbel klassikere
     </h1>
     <button
-      class="hero-button rounded-full px-8 bg-white text-black p-4 m-auto"
+      class="hero-button rounded-full px-8 bg-white text-black p-3 m-auto text-sm sm:p-4"
     >
       SE MERE HER
     </button>
