@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative page-container rounded z-1"
+    class="relative page-container rounded z-1 h-screen w-full"
     :class="{ removeImage: isBurgerActive }"
   >
     <figure class="rounded">

@@ -36,7 +36,8 @@ module.exports = {
                 12: "repeat(12, minmax(0, 1fr))",
             },
         },
+
     },
-    plugins: [
+    plugins: [require('@tailwindcss/forms'),
     ],
 };

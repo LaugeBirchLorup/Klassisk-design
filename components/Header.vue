@@ -33,7 +33,7 @@
       <h1 class="test">KLASSISK DESIGN</h1>
     </div>
     <div class="logo justify-center w-full flex md:hidden">
-      <h1 class="test">K</h1>
+      <h1 class="test">KD</h1>
     </div>
     <div class="kurv flex gap-3 items-center justify-end">
       <p class="hidden md:block">Kurv</p>
