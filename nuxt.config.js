@@ -1,4 +1,6 @@
 export default {
+
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'klassisk',
@@ -34,9 +36,13 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
+  modules: ['nuxt-shopify'
   ],
-
+  shopify: {
+    domain: process.env.SHOPIFY_DOMAIN,
+    storefrontAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
+    unoptimized: true
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
@@ -45,5 +51,6 @@ export default {
     port: 8000, // default: 3000     
     host: '0.0.0.0', // default: localhost   
   },   // other configs 
-}
+};
+
 
