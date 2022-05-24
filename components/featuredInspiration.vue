@@ -1,19 +1,21 @@
 <template>
-  <div class="w-full h-full page-container my-24 md:my-48 overflow-x-scroll">
+  <div
+    class="featuredInspiration w-full h-full page-container my-24 md:my-48 overflow-x-scroll"
+  >
     <h1
       class="featured_header text-3xl md:text-6xl text-left md:text-center mb-3"
     >
       Mangler du inspiration?
     </h1>
-    <div class="item-container flex justify-center gap-3 w-[180%] md:w-full">
+    <div class="item-container flex justify-center gap-3 md:w-full w-max">
       <div class="item">
-        <img class="" src="~/assets/scss/instagram1.png" alt="" />
+        <img class="w-80 h-80" src="~/assets/scss/instagram1.png" alt="" />
       </div>
       <div class="item">
-        <img class="" src="~/assets/scss/instagram2.png" alt="" />
+        <img class="w-80 h-80" src="~/assets/scss/instagram2.png" alt="" />
       </div>
       <div class="item">
-        <img class="" src="~/assets/scss/instagram3.png" alt="" />
+        <img class="w-80 h-80" src="~/assets/scss/instagram3.png" alt="" />
       </div>
     </div>
   </div>
@@ -40,5 +42,13 @@ export default {};
 .price {
   font-family: var(--defaultFont);
   font-weight: bold;
+}
+.featuredInspiration {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.featuredInspiration::-webkit-scrollbar {
+  display: none;
 }
 </style>
