@@ -19,6 +19,14 @@
     max-width: 100%;
   }
 }
+
+.page-wrapper {
+  @apply w-full max-w-[85%] md:max-w-[90%] lg:max-w-[95%];
+
+  .page-container {
+    max-width: 100%;
+  }
+}
 body {
   font-family: var(--defaultFont);
   background: #f1f1f1;

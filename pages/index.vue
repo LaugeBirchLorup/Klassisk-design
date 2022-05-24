@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero/>
+    <Hero />
     <HomeRenovate class="w-full h-full" />
     <featuredProducts class="" />
     <featuredInspiration />
