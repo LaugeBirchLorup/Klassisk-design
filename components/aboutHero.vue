@@ -6,20 +6,15 @@
     <figure class="rounded">
       <img
         class="relative rounded max-h-[rem] h-[83vh] w-full object-cover sm:h-[85vh]"
-        src="~/assets/scss/test.jpg"
+        src="~/assets/scss/aboutPic.png"
         alt=""
       />
     </figure>
     <h1
       class="text-4xl leading-12 md:text-5xl lg:text-7xl lg:leading-[110px] text-white absolute hero-text"
     >
-      Udforsk istandsatte danske møbel klassikere
+      Kom og kig forbi min forretning
     </h1>
-    <button
-      class="hero-button rounded-full px-8 bg-white text-black p-3 m-auto text-sm sm:p-4"
-    >
-      SE MERE HER
-    </button>
   </div>
 </template>
 
