@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style lang="scss">
-h1 {
+.mainTitle {
   font-family: var(--secondaryFont);
   font-size: 48px;
   line-height: 38px;

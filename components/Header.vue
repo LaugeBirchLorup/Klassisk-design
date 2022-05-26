@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-24 page-container flex items-center w-full z-50"
+    class="h-24 page-container flex items-center w-full z-20"
     :class="{ activeText: isBurgerActive }"
   >
     <MenuOverlay class="w-full h-screen" />
@@ -39,7 +39,10 @@
         <h1 class="test">KD</h1>
       </nuxt-link>
     </div>
-    <div class="kurv flex gap-3 items-center justify-end">
+    <div
+      class="kurv flex gap-3 items-center justify-end cursor-pointer"
+      @click="setShowCart(!showCart)"
+    >
       <p class="hidden md:block">Kurv</p>
       <div
         :class="{ activeMenu: isBurgerActive }"
@@ -52,6 +55,7 @@
 </template>
 
 <script>
+import { mapActions, mapState, mapGetters } from "vuex";
 export default {
   components: {
     MenuOverlay: () => import("@/components/MenuOverlay"),
@@ -63,6 +67,8 @@ export default {
     mobileNav() {
       return this.$store.state.mobileNavVisible;
     },
+    ...mapState(["showCart"]),
+    ...mapGetters(["cartCount"]),
   },
 
   methods: {
@@ -72,6 +78,7 @@ export default {
     toggleMobileNavigation() {
       this.$store.dispatch("toggleMobileNavigation");
     },
+    ...mapActions(["setShowCart"]),
   },
 };
 </script>
@@ -94,7 +101,7 @@ button:focus {
   height: 30px;
   width: 32px;
   display: block;
-  z-index: 100;
+  z-index: 30;
   border: 0;
   border-radius: 0;
   background-color: transparent;
@@ -165,14 +172,14 @@ button:focus {
 }
 
 .logo {
-  z-index: 100;
+  z-index: 30;
 }
 
 .kurv {
-  z-index: 100;
+  z-index: 30;
 }
 
 .menu_text {
-  z-index: 100;
+  z-index: 30;
 }
 </style>

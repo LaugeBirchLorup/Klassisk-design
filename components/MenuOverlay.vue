@@ -1,7 +1,7 @@
 <template>
   <div
     ref="mobileNav"
-    class="mobile-nav z-50 fixed top-0 right-0 bottom-0 left-0.25 transform h-full w-full translate-x-full bg-black"
+    class="mobile-nav z-20 fixed top-0 right-0 bottom-0 left-0.25 transform h-full w-full translate-x-full bg-black"
   >
     <div class="container page-container w-full h-full grid grid-cols-12 gap-8">
       <div class="content_text col-start-2 col-span-4 m-auto">
