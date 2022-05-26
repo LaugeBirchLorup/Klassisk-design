@@ -3,7 +3,7 @@
     <h1 class="social_header text-7xl text-center">
       Følg os på de sociale medier
     </h1>
-    <div class="content_sociale__logoer flex gap-3 justify-center">
+    <div class="mt-12 content_sociale__logoer flex gap-3 justify-center">
       <img src="~/assets/scss/facebook-white-logo.png" alt="" />
       <img src="~/assets/scss/instagram-white-logo.png" alt="" />
     </div>

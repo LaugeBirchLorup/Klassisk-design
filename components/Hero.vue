@@ -3,15 +3,15 @@
     class="relative page-container rounded z-1 h-screen w-full"
     :class="{ removeImage: isBurgerActive }"
   >
-    <figure class="rounded">
+    <figure class="rounded frontpage_hero h-fit">
       <img
         class="relative rounded max-h-[rem] h-[83vh] w-full object-cover sm:h-[85vh]"
-        src="~/assets/scss/test.jpg"
+        src="~/assets/scss/heroforside.jpg"
         alt=""
       />
     </figure>
     <h1
-      class="text-4xl leading-12 md:text-5xl lg:text-7xl lg:leading-[110px] text-white absolute hero-text"
+      class="hero-text text-4xl leading-12 md:text-5xl lg:text-7xl lg:leading-[110px] text-white absolute hero-text"
     >
       Udforsk istandsatte danske møbel klassikere
     </h1>
@@ -39,6 +39,38 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.frontpage_hero::before {
+  content: "";
+  display: block;
+  height: 85%;
+  position: absolute;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #090909;
+}
+@media (max-width: 650px) {
+  .frontpage_hero::before {
+    content: "";
+    display: block;
+    height: 83%;
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #090909;
+  }
+}
+.hero-text {
+  z-index: 3;
+}
+.hero-button {
+  z-index: 3;
+}
 .removeImage {
   transition: opacity 0.2s;
   opacity: 0; // set opacity property to 1, completely visible

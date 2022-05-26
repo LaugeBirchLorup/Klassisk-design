@@ -1,6 +1,6 @@
 <template>
   <div
-    class="featuredProducts w-full h-full page-container my-24 md:my-48 relative overflow-x-scroll"
+    class="featuredProducts w-full h-full page-container my-24 md:my-48 relative overflow-x-scroll md:overflow-x-visible"
   >
     <h1
       class="featured_header text-3xl md:text-6xl text-left md:text-center mb-3"
