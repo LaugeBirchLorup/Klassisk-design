@@ -3,9 +3,9 @@
     class="relative page-container rounded z-1 h-screen w-full"
     :class="{ removeImage: isBurgerActive }"
   >
-    <figure class="rounded frontpage_hero h-fit">
+    <figure class="frontpage_hero h-fit">
       <img
-        class="relative rounded max-h-[rem] h-[83vh] w-full object-cover sm:h-[85vh]"
+        class="rounded-md relative max-h-[rem] h-[83vh] w-full object-cover sm:h-[85vh]"
         src="~/assets/scss/heroforside.jpg"
         alt=""
       />
@@ -40,6 +40,7 @@ export default {
 
 <style lang="scss" scoped>
 .frontpage_hero::before {
+  border-radius: 8px;
   content: "";
   display: block;
   height: 85%;
@@ -53,6 +54,7 @@ export default {
 }
 @media (max-width: 650px) {
   .frontpage_hero::before {
+    border-radius: 8px;
     content: "";
     display: block;
     height: 83%;
