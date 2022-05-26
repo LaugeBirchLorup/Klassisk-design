@@ -8,30 +8,26 @@
       Se vores udvalg
     </h1>
     <div class="item-container flex justify-center gap-3 md:w-full w-max">
-      <div class="item">
-        <img class="w-80 h-72" src="~/assets/scss/chair.png" alt="" />
-        <h2 class="mt-2 product_title">Poul Kjærholm</h2>
-        <p class="mt-1 product_description">PK 9 - Stol i patineret læder</p>
-        <h2 class="mt-3 price">29.999 DKK</h2>
-      </div>
-      <div class="item">
-        <img class="w-80 h-72" src="~/assets/scss/chair.png" alt="" />
-        <h2 class="mt-2 product_title">Poul Kjærholm</h2>
-        <p class="mt-1 product_description">PK 9 - Stol i patineret læder</p>
-        <h2 class="mt-3 price">29.999 DKK</h2>
-      </div>
-      <div class="item">
-        <img class="w-80 h-72" src="~/assets/scss/chair.png" alt="" />
-        <h2 class="mt-2 product_title">Poul Kjærholm</h2>
-        <p class="mt-1 product_description">PK 9 - Stol i patineret læder</p>
-        <h2 class="mt-3 price">29.999 DKK</h2>
+      <div
+        class="item"
+        v-for="product in products.slice(0, 3)"
+        :key="product.id"
+      >
+        <Nuxt-link :to="`product/${product.handle}`">
+          <img class="w-80 h-72" :src="product.images[0].src" alt="" />
+          <h2 class="mt-2 product_title">{{ product.title }}</h2>
+          <p class="mt-1 product_description w-80">{{ product.description }}</p>
+          <h2 class="mt-3 price">{{ product.variants[0].price }} DKK</h2>
+        </Nuxt-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["products"],
+};
 </script>
 
 <style lang="scss" scoped>
@@ -46,6 +42,10 @@ export default {};
 }
 
 .product_description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .price {

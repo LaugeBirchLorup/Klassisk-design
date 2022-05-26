@@ -12,6 +12,7 @@ export default {
         toggleOverlay({ commit, state }) {
             commit("TOGGLE_OVERLAY", !state.overlayVisible);
         },
+
     },
 
     mutations: {
