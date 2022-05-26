@@ -30,10 +30,14 @@
       <p class="menu_text hidden md:block">Menu</p>
     </div>
     <div class="logo justify-center w-full hidden md:flex">
-      <h1 class="test">KLASSISK DESIGN</h1>
+      <nuxt-link to="/">
+        <h1 class="test">KLASSISK DESIGN</h1>
+      </nuxt-link>
     </div>
     <div class="logo justify-center w-full flex md:hidden">
-      <h1 class="test">KD</h1>
+      <nuxt-link to="/">
+        <h1 class="test">KD</h1>
+      </nuxt-link>
     </div>
     <div class="kurv flex gap-3 items-center justify-end">
       <p class="hidden md:block">Kurv</p>

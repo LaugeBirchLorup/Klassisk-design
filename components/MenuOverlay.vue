@@ -7,14 +7,32 @@
       <div class="content_text col-start-2 col-span-4 m-auto">
         <div class="bigger_menu__items text-5xl">
           <ol>
-            <li>Shop</li>
-            <li>Istandsættelse</li>
-            <li>Kontakt</li>
+            <nuxt-link to="/product">
+              <li @click="toggleMobileNavigation()">Shop</li>
+            </nuxt-link>
+            <nuxt-link to="/istandsaettelse">
+              <li @click="toggleMobileNavigation()">Istandsættelse</li>
+            </nuxt-link>
+            <nuxt-link to="/kontakt">
+              <li @click="toggleMobileNavigation()">Kontakt</li>
+            </nuxt-link>
           </ol>
         </div>
         <div class="social-icons flex gap-3 mt-12">
-          <img src="~/assets/scss/instagram-white-logo.png" alt="" />
-          <img src="~/assets/scss/facebook-white-logo.png" alt="" />
+          <a href="www.instagram.com/klassisk-design">
+            <img
+              @click="toggleMobileNavigation()"
+              src="~/assets/scss/instagram-white-logo.png"
+              alt=""
+            />
+          </a>
+          <a href="www.facebook.com/klassisk-design">
+            <img
+              @click="toggleMobileNavigation()"
+              src="~/assets/scss/facebook-white-logo.png"
+              alt=""
+            />
+          </a>
         </div>
         <div class="smaller_menu__items mt-12">
           <ol>
@@ -55,6 +73,9 @@ export default {
         duration: 0.455,
         ease: "strong.inOut",
       });
+    },
+    toggleMobileNavigation() {
+      this.$store.dispatch("toggleMobileNavigation");
     },
     animateMobileNavOut() {
       gsap.to(this.$refs.mobileNav, {
