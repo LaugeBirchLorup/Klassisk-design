@@ -12,8 +12,9 @@
       v-show="showCart"
       class="w-[100%] h-screen md:w-8/12 lg:w-6/12 xl:w-5/12 xl:max-w-xl max-h-screen md:h-screen bg-white px-4 transform transition-transform absolute md:right-0 bottom-0 overflow-y-auto transform-translate-y md:transform-translate-x pointer-events-auto"
     >
-      <header class="sticky flex items-center justify-between p-8 w-full">
-        <h1 class="">Din Kurv</h1>
+      <!-- cart  header -->
+      <header class="sticky flex items-center justify-between py-2 px-7 w-full">
+        <h1 class="yourorder">Din ordre</h1>
         <div class="closeBurger cursor-pointer" @click="setShowCart(false)">
           <svg
             width="17"
@@ -27,13 +28,15 @@
           </svg>
         </div>
       </header>
-      <div class="item-wrapper px-8 w-full">
-        <div class="item-container flex gap-6">
+      <!-- Product items  -->
+
+      <li class="item-wrapper px-8 w-full">
+        <div class="item-container flex gap-6 w-full">
           <div class="image">
-            <img class="w-36 h-36" src="~/assets/scss/chair.png" />
+            <img src="~/assets/scss/chair.png" class="w-36 h-36" />
           </div>
           <div class="text">
-            <h1 class="item-title text-left">HANS J BERG</h1>
+            <h1 class="item-title text-left">title</h1>
 
             <h2 class="price mb-12">232323 DKK</h2>
             <div class="actions flex justify-between">
@@ -47,7 +50,7 @@
           </div>
         </div>
         <hr class="mt-6 border-1 border-solid border-black w-full" />
-      </div>
+      </li>
     </div>
   </div>
 </template>
@@ -61,7 +64,7 @@ export default {
     };
   },
   computed: {
-    ...mapState(["showCart"]),
+    ...mapState(["showCart", "checkout"]),
     ...mapGetters(["cartCount"]),
     items() {
       return this.checkout.lineItems;
@@ -74,6 +77,12 @@ export default {
 </script>
 
 <style lang="scss">
+.yourorder {
+  font-family: var(--secondaryFont);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 76px;
+}
 .item-title {
   font-family: var(--secondaryFont);
   font-size: 32px;
