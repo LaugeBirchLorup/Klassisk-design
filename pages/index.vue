@@ -16,5 +16,10 @@ export default {
     const products = await $shopify.product.fetchAll();
     return { products };
   },
+  data() {
+    return {
+      products: "",
+    };
+  },
 };
 </script>
