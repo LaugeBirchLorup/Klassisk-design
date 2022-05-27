@@ -7,7 +7,7 @@
       <div class="content_text col-start-2 col-span-4 m-auto">
         <div class="bigger_menu__items text-5xl">
           <ol>
-            <nuxt-link to="/product">
+            <nuxt-link to="/products">
               <li @click="toggleMobileNavigation()">Shop</li>
             </nuxt-link>
             <nuxt-link to="/istandsaettelse">

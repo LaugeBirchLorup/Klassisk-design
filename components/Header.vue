@@ -48,7 +48,7 @@
         :class="{ activeMenu: isBurgerActive }"
         class="borderCircle rounded-full h-8 w-8 border-solid border-2 flex justify-center items-center"
       >
-        <p>0</p>
+        <p>{{ cartCount }}</p>
       </div>
     </div>
   </div>

@@ -13,7 +13,10 @@
           {{ product.description }}
         </p>
         <h2 class="price mb-3 mt-16">{{ product.variants[0].price }} DKK</h2>
-        <button class="w-full h-16 rounded-md bg-black text-white">
+        <button
+          class="w-full h-16 rounded-md bg-black text-white"
+          @click="() => addItem(selected.id)"
+        >
           <p class="ctaText">Tilføj til kurv</p>
         </button>
       </div>
@@ -24,11 +27,16 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
 export default {
   async asyncData({ params, $shopify }) {
     const product = await $shopify.product.fetchByHandle(params.handle);
     const products = await $shopify.product.fetchAll();
     return { product, selected: product.variants[0], products };
+  },
+
+  methods: {
+    ...mapActions(["addItem"]),
   },
 };
 </script>

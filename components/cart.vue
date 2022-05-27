@@ -30,27 +30,55 @@
       </header>
       <!-- Product items  -->
 
-      <li class="item-wrapper px-8 w-full">
-        <div class="item-container flex gap-6 w-full">
-          <div class="image">
-            <img src="~/assets/scss/chair.png" class="w-36 h-36" />
-          </div>
-          <div class="text">
-            <h1 class="item-title text-left">title</h1>
+      <ul>
+        <li
+          class="item-wrapper px-8 w-full"
+          v-for="item in items"
+          :key="item.id"
+        >
+          <div class="item-container flex gap-6 w-full">
+            <div class="image">
+              <img :src="item.variant.image.src" class="w-36 h-36" />
+            </div>
+            <div class="text">
+              <h1 class="item-title text-left">{{ item.title }}</h1>
 
-            <h2 class="price mb-12">232323 DKK</h2>
-            <div class="actions flex justify-between">
-              <div
-                class="count rounded-full bg-gray-500 w-6 h-6 text-white flex items-center justify-center"
-              >
-                1
+              <h2 class="price mb-12">{{ item.variant.price }} DKK</h2>
+              <div class="actions flex justify-between">
+                <div
+                  class="count rounded-full bg-gray-500 w-6 h-6 text-white flex items-center justify-center"
+                >
+                  1
+                </div>
+                <p
+                  @click="() => removeItem(item.id)"
+                  class="remove cursor-pointer"
+                >
+                  Fjern
+                </p>
               </div>
-              <p class="remove">Fjern</p>
             </div>
           </div>
-        </div>
-        <hr class="mt-6 border-1 border-solid border-black w-full" />
-      </li>
+          <hr class="mt-6 border-1 border-solid border-black w-full" />
+        </li>
+      </ul>
+      <div v-show="cartCount === 0">
+        <img src="" class="cart-empty-img" />
+        <p class="text-noItems px-8 w-3/4 text-left mt-16">
+          Det ligner at du ikke har tilføjet noget til kurven endnu
+        </p>
+        <nuxt-link to="/products">
+          <p
+            class="cta_cart text-lg px-8 w-3/4 text-left mt-16"
+            @click="setShowCart(false)"
+          >
+            Se vores Produkter
+          </p>
+        </nuxt-link>
+        <p class="brand-text absolute -rotate-90 bottom-64 -right-48">
+          Klassisk Design
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -58,20 +86,15 @@
 <script>
 import { mapActions, mapState, mapGetters } from "vuex";
 export default {
-  data() {
-    return {
-      preventUpdate: false,
-    };
-  },
   computed: {
-    ...mapState(["showCart", "checkout"]),
+    ...mapState(["showCart", "removing", "checkout"]),
     ...mapGetters(["cartCount"]),
     items() {
       return this.checkout.lineItems;
     },
   },
   methods: {
-    ...mapActions(["setShowCart"]),
+    ...mapActions(["setShowCart", "removeItem"]),
   },
 };
 </script>
@@ -89,6 +112,10 @@ export default {
 
   font-weight: 400;
 }
+.text-noItems {
+  font-weight: 100;
+  font-family: var(--defaultFont);
+}
 .remove {
   font-weight: 700;
 }
@@ -96,5 +123,17 @@ export default {
   font-weight: 700;
 }
 .hr {
+}
+.cta_cart {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.brand-text {
+  font-family: var(--secondaryFont);
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 76px;
+  text-transform: uppercase;
+  opacity: 0.3;
 }
 </style>

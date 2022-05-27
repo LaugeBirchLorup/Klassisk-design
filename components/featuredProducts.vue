@@ -13,7 +13,7 @@
         v-for="product in products.slice(0, 3)"
         :key="product.id"
       >
-        <Nuxt-link :to="`product/${product.handle}`">
+        <Nuxt-link :to="`products/${product.handle}`">
           <img class="w-80 h-72" :src="product.images[0].src" alt="" />
           <h2 class="mt-2 product_title">{{ product.title }}</h2>
           <p class="mt-1 product_description w-80">{{ product.description }}</p>
