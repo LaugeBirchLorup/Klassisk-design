@@ -1,5 +1,5 @@
 <template>
-    <div class="page-container grid grid-cols-6 gap-4 mt-2">
+    <div class="page-container grid grid-cols-6 gap-4 mt-8">
         <div class="col-start-1">
             <button class="stole-button rounded-full px-8 bg-black text-white p-3 m-auto text-sm sm:px-20 drop-shadow">
                 STOLE
