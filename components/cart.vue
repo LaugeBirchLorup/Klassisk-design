@@ -30,7 +30,7 @@
       </header>
       <button
         v-show="cartCount > 0"
-        class="w-[34rem] h-16 rounded-md bg-black text-white absolute bottom-3"
+        class="m-auto w-full max-w-[93%] md:w-[35rem] h-16 rounded-md bg-black text-white absolute bottom-3"
         @click="goToCheckout"
       >
         Checkout

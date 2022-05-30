@@ -9,24 +9,30 @@
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2 mr-0">
         <div class="md:ml-4">
-          <h2 class="mb-4 font-semibold uppercase text-white">SHOP</h2>
+          <a href="../products">
+            <h2 class="mb-4 font-semibold uppercase text-white">SHOP</h2>
+          </a>
           <ul class="font-semibold text-white">
             <li class="mb-4">
-              <a href="" class="hover:underline">ISTANDSÆTTELSE</a>
+              <a href="../istandsaettelse" class="hover:underline"
+                >ISTANDSÆTTELSE</a
+              >
             </li>
             <li>
-              <a href="" class="hover:underline">BETINGELSER</a>
+              <a href="../index" class="hover:underline">BETINGELSER</a>
             </li>
           </ul>
         </div>
         <div class="md:ml-4 ml-12">
-          <h2 class="mb-4 font-semibold uppercase text-white">OM OS</h2>
+          <a href="../about">
+            <h2 class="mb-4 font-semibold uppercase text-white">OM OS</h2>
+          </a>
           <ul class="text-white font-semibold">
             <li class="mb-4">
-              <a href="" class="hover:underline">ÅBNINGSTIDER</a>
+              <a href="../Kontakt" class="hover:underline">ÅBNINGSTIDER</a>
             </li>
             <li>
-              <a href="" class="hover:underline">KONTAKT OS</a>
+              <a href="../Kontakt" class="hover:underline">KONTAKT OS</a>
             </li>
           </ul>
         </div>
@@ -43,7 +49,7 @@
       </span>
       <div class="flex mt-0 ml-2 md:mt-4 space-x-6 sm:justify-center sm:mt-0">
         <a
-          href="#"
+          href="https://www.facebook.com/klassisk-design"
           class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
         >
           <svg
@@ -60,7 +66,7 @@
           </svg>
         </a>
         <a
-          href="#"
+          href="https://www.instagram.com/klassiskdesign"
           class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
         >
           <svg

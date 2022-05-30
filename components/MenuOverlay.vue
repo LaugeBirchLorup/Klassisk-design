@@ -19,14 +19,14 @@
           </ol>
         </div>
         <div class="social-icons flex gap-3 mt-12">
-          <a href="www.instagram.com/klassisk-design">
+          <a href="https://www.instagram.com/klassiskdesign">
             <img
               @click="toggleMobileNavigation()"
               src="~/assets/scss/instagram-white-logo.png"
               alt=""
             />
           </a>
-          <a href="www.facebook.com/klassisk-design">
+          <a href="https://www.facebook.com/klassisk-design">
             <img
               @click="toggleMobileNavigation()"
               src="~/assets/scss/facebook-white-logo.png"
