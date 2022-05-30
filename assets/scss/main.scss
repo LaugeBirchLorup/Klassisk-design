@@ -34,20 +34,20 @@ body {
 }
 @font-face {
   font-family: "Uncut Sans";
-  src: url(../fonts/UNCUT-SANS-BOLD.woff) format("woff");
-  src: url(../fonts/UNCUT-SANS-BOLDOBLIQUE.woff) format("woff");
-  src: url(../fonts/UNCUT-SANS-MEDIUM.woff) format("woff");
-  src: url(../fonts/UNCUT-SANS-MEDIUMOBLIQUE.woff) format("woff");
-  src: url(../fonts/UNCUT-SANS-REGULAR.woff) format("woff");
-  src: url(../fonts/UNCUT-SANS-REGULAROBLIQUE.woff) format("woff");
-  src: url(../fonts/UNCUT-SANS-SEMIBOLD.woff) format("woff");
-  src: url(../fonts/UNCUT-SANS-SEMIBOLDOBLIQUE.woff) format("woff");
+  src: url(@/fonts/UNCUT-SANS-BOLD.woff) format("woff");
+  src: url(@/fonts/UNCUT-SANS-BOLDOBLIQUE.woff) format("woff");
+  src: url(@/fonts/UNCUT-SANS-MEDIUM.woff) format("woff");
+  src: url(@/fonts/UNCUT-SANS-MEDIUMOBLIQUE.woff) format("woff");
+  src: url(@/fonts/UNCUT-SANS-REGULAR.woff) format("woff");
+  src: url(@/fonts/UNCUT-SANS-REGULAROBLIQUE.woff) format("woff");
+  src: url(@/fonts/UNCUT-SANS-SEMIBOLD.woff) format("woff");
+  src: url(@/fonts/UNCUT-SANS-SEMIBOLDOBLIQUE.woff) format("woff");
 }
 
 @font-face {
   font-family: "Perpetua ";
-  src: url(../fonts/PERPETUA_TITLING_MT_BOLD.woff) format("woff");
-  src: url(../fonts/PERPETUA_TITLING_MT_LIGHT.woff) format("woff");
+  src: url(@/fonts/PERPETUA_TITLING_MT_BOLD.woff) format("woff");
+  src: url(@/fonts/PERPETUA_TITLING_MT_LIGHT.woff) format("woff");
 }
 
 :root {
