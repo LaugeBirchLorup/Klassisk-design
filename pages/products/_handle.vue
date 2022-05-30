@@ -4,7 +4,11 @@
       class="product_container md:flex md:justify-center md:items-center md:gap-9"
     >
       <div class="image-container mb-12">
-        <img class="rounded-md" :src="product.images[0].src" alt="" />
+        <img
+          class="rounded-md md:w-[36rem]"
+          :src="product.images[0].src"
+          alt=""
+        />
       </div>
       <div class="content-contianer w-full h-full md:w-[40rem]">
         <h3 class="category text-lg mb-3">Stol</h3>

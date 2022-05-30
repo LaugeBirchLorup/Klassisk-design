@@ -1,39 +1,51 @@
-<template>
-    <div class="page-container grid grid-cols-6 gap-4 mt-8">
-        <div class="col-start-1">
-            <button class="stole-button rounded-full px-8 bg-black text-white p-3 m-auto text-sm sm:px-20 drop-shadow">
-                STOLE
-            </button>
-        </div>
-        <div class="col-start-2">
-            <button class="borde-button rounded-full px-8 bg-white text-black p-3 m-auto text-sm sm:px-20 drop-shadow">
-                BORDE
-            </button>
-        </div>
-        <div class="col-start-3">
-            <button class="belysning-button rounded-full px-8 bg-white text-black p-3 m-auto text-sm sm:px-20 drop-shadow">
-                BELYSNING
-            </button>
-        </div>
-        <div class="col-start-4">
-            <button class="sofaer-button rounded-full px-8 bg-white text-black p-3 m-auto text-sm sm:px-20 drop-shadow">
-                SOFAER
-            </button>
-        </div>
-        <div class="col-start-5">
-            <button class="reoler-button rounded-full px-8 bg-white text-black p-3 m-auto text-sm sm:px-20 drop-shadow">
-                REOLER
-            </button>
-        </div>
-        <div class="col-start-6">
-            <button class="tilbehoer-button rounded-full px-8 bg-white text-black p-3 m-auto text-sm sm:px-20 drop-shadow">
-                TILBEHØR
-            </button>
-        </div>
-    </div>
+<template class="overflow-x-hidden mb-3">
+  <div
+    class="page-container w-full h-full mt-3 flex gap-3 overflow-x-scroll hidescrollbar md:justify-center md:gap-9"
+  >
+    <Nuxt-link to="./products/stole">
+      <Button class="bg-white text-black px-12 p-4 rounded-full">Stole</Button>
+    </Nuxt-link>
+    <Nuxt-link to="./products/borde">
+      <Button class="bg-white text-black px-12 p-4 rounded-full">Borde</Button>
+    </Nuxt-link>
+    <Nuxt-link to="./products/sofaer">
+      <Button class="bg-white text-black px-12 p-4 rounded-full">Sofaer</Button>
+    </Nuxt-link>
+    <Nuxt-link to="./products/belysning">
+      <Button class="bg-white text-black px-12 p-4 rounded-full"
+        >Belysning</Button
+      >
+    </Nuxt-link>
+    <Nuxt-link to="./products/tilbehoer">
+      <Button class="bg-white text-black px-12 p-4 rounded-full"
+        >Accessories</Button
+      >
+    </Nuxt-link>
+  </div>
 </template>
 
+<script>
+export default {
+  props: ["products"],
+
+  data() {
+    return {
+      isButtonActive: false,
+    };
+  },
+  methods: {
+    setButtonActive: function () {
+      this.isButtonActive = !this.isButtonActive;
+    },
+  },
+};
+</script>
+
 <style lang="scss" scoped>
+.active {
+  color: #fff;
+  background-color: #090909;
+}
 .stole-button {
   font-size: 14px;
   font-weight: bold;
@@ -57,5 +69,13 @@
 .tilbehoer-button {
   font-size: 14px;
   font-weight: bold;
+}
+.hidescrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hidescrollbar::-webkit-scrollbar {
+  display: none;
 }
 </style>

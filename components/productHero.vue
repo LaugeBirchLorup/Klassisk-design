@@ -1,11 +1,11 @@
 <template>
   <div
-    class="relative page-container rounded z-1 h-[40vh] w-full"
+    class="relative page-container rounded z-1 w-full"
     :class="{ removeImage: isBurgerActive }"
   >
     <figure class="rounded">
       <img
-        class="relative rounded max-h-[rem] h-[83vh] w-full object-cover sm:h-[40vh]"
+        class="relative rounded max-h-[48rem] h-[24rem] md:h-[24rem] w-full object-cover sm:h-[40vh]"
         src="~/assets/scss/sofaBord.png"
         alt=""
       />
@@ -13,7 +13,7 @@
     <h1
       class="text-4xl leading-12 md:text-5xl lg:text-7xl lg:leading-[110px] text-white absolute hero-text"
     >
-      STOLE
+      PRODUKTER
     </h1>
   </div>
 </template>

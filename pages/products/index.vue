@@ -1,8 +1,8 @@
 <template>
   <div>
-    <productHero/>
-    <productPageButtons/>
-    <productPageProducts/>
+    <productHero />
+    <productPageButtons class="" />
+    <productPageProducts :products="products" />
   </div>
 </template>
 

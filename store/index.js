@@ -6,6 +6,7 @@ export default {
         overlayVisible: false,
         isActive: false,
         showCart: false,
+        isButtonActive: false,
     }),
 
     actions: {
@@ -14,6 +15,9 @@ export default {
         },
         toggleOverlay({ commit, state }) {
             commit("TOGGLE_OVERLAY", !state.overlayVisible);
+        },
+        setButtonActive({ commit, state }) {
+            commit("SET_BUTTON_ACTIVE", !state.isButtonActive);
         },
         setShowCart({ commit }, showCart) {
             commit('SET_SHOW_CART', showCart)
@@ -55,6 +59,10 @@ export default {
     },
 
     mutations: {
+        
+        SET_BUTTON_ACTIVE(state){
+            state.isButtonActive =  !state.isButtonActive;
+        },
         SET_MOBILE_STATE(state, visibility) {
             state.mobileNavVisible = visibility;
         },
