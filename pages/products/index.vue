@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>shop</h1>
+    <productHero/>
+    <productPageButtons/>
+    <productPageProducts/>
   </div>
 </template>
 
