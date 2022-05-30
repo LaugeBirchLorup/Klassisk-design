@@ -151,12 +151,12 @@ export default {
   font-weight: bold;
 }
 
-.featuredProducts {
+.hidescrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-.featuredProducts::-webkit-scrollbar {
+.hidescrollbar::-webkit-scrollbar {
   display: none;
 }
 </style>

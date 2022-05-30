@@ -56,12 +56,24 @@ export default {
                     commit('UPDATE_REMOVING', false)
                 })
         },
+        async createCheckout({ commit, state }) {
+            commit('UPDATE_LOADING', true)
+            await this.$shopify.checkout.create().then((checkout) => {
+                commit('UPDATE_CHECKOUT', checkout)
+                commit('UPDATE_LOADING', false)
+            })
+        },
+
+
+
+
+
     },
 
     mutations: {
-        
-        SET_BUTTON_ACTIVE(state){
-            state.isButtonActive =  !state.isButtonActive;
+
+        SET_BUTTON_ACTIVE(state) {
+            state.isButtonActive = !state.isButtonActive;
         },
         SET_MOBILE_STATE(state, visibility) {
             state.mobileNavVisible = visibility;
@@ -87,8 +99,15 @@ export default {
         cartCount(state) {
             return state.checkout?.lineItems?.length || 0
         },
-        checkout(state) {
-            return state.checkout
+        checkoutId(state) {
+            return state.checkout.id
+        },
+        isCheckoutComplete(state) {
+            return (
+                state.checkout &&
+                state.checkout.completedAt !== null &&
+                typeof state.checkout.completedAt !== 'undefined'
+            )
         },
     }
 

@@ -28,6 +28,13 @@
           </svg>
         </div>
       </header>
+      <button
+        v-show="cartCount > 0"
+        class="w-[34rem] h-16 rounded-md bg-black text-white absolute bottom-3"
+        @click="goToCheckout"
+      >
+        Checkout
+      </button>
       <!-- Product items  -->
 
       <ul>
@@ -60,8 +67,13 @@
             </div>
           </div>
           <hr class="mt-6 border-1 border-solid border-black w-full" />
+          <div class="priceofproduct flex justify-between items-end mt-3">
+            <p>Din pris</p>
+            <p>{{ item.variant.price }}</p>
+          </div>
         </li>
       </ul>
+
       <div v-show="cartCount === 0">
         <img src="" class="cart-empty-img" />
         <p class="text-noItems px-8 w-3/4 text-left mt-16">
@@ -95,6 +107,9 @@ export default {
   },
   methods: {
     ...mapActions(["setShowCart", "removeItem"]),
+    goToCheckout() {
+      window.location.href = this.checkout.webUrl;
+    },
   },
 };
 </script>
@@ -135,5 +150,10 @@ export default {
   line-height: 76px;
   text-transform: uppercase;
   opacity: 0.3;
+}
+.priceofproduct {
+  font-family: var(--defaultFont);
+  font-weight: 600;
+  font-size: 24px;
 }
 </style>
