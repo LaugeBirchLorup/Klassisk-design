@@ -25,7 +25,7 @@
         </button>
       </div>
     </div>
-    <relatedProducts :products="products" class="w-full h-screen" />
+    <relatedProducts :products="products" class="w-full" />
     <featuredInspiration />
   </div>
 </template>
