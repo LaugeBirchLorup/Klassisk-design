@@ -5,7 +5,7 @@
     <h1
       class="main_header text-5xl md:text-7xl md:w-1/2 leading-[48px] m-auto mb-6 md:leading-[76px]"
     >
-      Vi renovere og sælger danske klassiskere
+      Vi renoverer og sælger danske klassiskere
     </h1>
     <p class="main_content m-auto mb-3 text-md md:w-1/4">
       I Klassisk Design finder du en del snedkermestermøbler i både Teak og Eg,

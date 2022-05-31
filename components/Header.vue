@@ -87,7 +87,7 @@ export default {
 .test {
   font-family: var(--secondaryFont);
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 button:focus {
