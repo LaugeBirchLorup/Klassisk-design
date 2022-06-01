@@ -15,9 +15,11 @@
       <div
         class="contentText mt-3 lg:w-[30rem] ml-0 lg:ml-9 page-wrapper mb-6 w-fit mr-[45px] lg:mr-16"
       >
-        <h3 class="notTitle text-3xl">Giv dine møbler nyt liv</h3>
+        <h3 class="notTitle text-xl md:text-2xl lg:text-3xl">
+          Giv dine møbler nyt liv
+        </h3>
         <h1
-          class="title text-4xl xs:text-5xl mb-3 leading-[48px] md:leading[64px] lg:leading-[64px]"
+          class="title text-3xl xs:text-3xl md:text-5xl mb-3 leading-[48px] md:leading[64px] lg:leading-[64px]"
         >
           Renovering & Istandsættelse
         </h1>

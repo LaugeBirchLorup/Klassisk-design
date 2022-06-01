@@ -11,15 +11,17 @@
       />
     </figure>
     <h1
-      class="text-4xl leading-12 md:text-5xl lg:text-7xl lg:leading-[110px] text-white absolute hero-text"
+      class="text-4xl leading-12 md:text-5xl lg:text-5xl xl:text-7xl lg:leading-[90px] xl:leading-[110px] text-white absolute hero-text"
     >
       Klassisk Design genopliver dine gamle klassiskere
     </h1>
-    <button
-      class="hero-button rounded-full px-8 bg-white text-black p-3 m-auto text-sm sm:p-4"
-    >
-      KONTAKT OS HER
-    </button>
+    <Nuxt-link to="/kontakt" class="cursor-pointer">
+      <button
+        class="hero-button rounded-full px-8 bg-white text-black p-3 m-auto text-sm sm:p-4"
+      >
+        KONTAKT OS HER
+      </button>
+    </Nuxt-link>
   </div>
 </template>
 

@@ -8,15 +8,21 @@
       Mangler du inspiration?
     </h1>
     <div class="item-container flex justify-center gap-3 md:w-full w-max">
-      <div class="item">
-        <img class="w-80 h-80" src="~/assets/scss/instagram1.png" alt="" />
-      </div>
-      <div class="item">
-        <img class="w-80 h-80" src="~/assets/scss/instagram2.png" alt="" />
-      </div>
-      <div class="item">
-        <img class="w-80 h-80" src="~/assets/scss/instagram3.png" alt="" />
-      </div>
+      <a href="https://www.instagram.com/p/CeJkljQNh41/">
+        <div class="item">
+          <img class="w-80 h-80" src="~/assets/scss/instagram1.png" alt="" />
+        </div>
+      </a>
+      <a href="https://www.instagram.com/p/CeDwEMwMcTa/">
+        <div class="item">
+          <img class="w-80 h-80" src="~/assets/scss/instagram2.png" alt="" />
+        </div>
+      </a>
+      <a href="https://www.instagram.com/p/Cds48IdqJgs/">
+        <div class="item">
+          <img class="w-80 h-80" src="~/assets/scss/instagram3.png" alt="" />
+        </div>
+      </a>
     </div>
   </div>
 </template>

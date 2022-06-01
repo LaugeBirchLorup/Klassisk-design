@@ -11,7 +11,7 @@
       />
     </figure>
     <h1
-      class="text-4xl leading-12 md:text-5xl lg:text-7xl lg:leading-[110px] text-white absolute hero-text"
+      class="text-2xl leading-12 md:text-3xl lg:text-5xl xl:text-7xl lg:leading-[90px] xl:leading-[110px] text-white absolute hero-text"
     >
       Kom og kig forbi min forretning
     </h1>

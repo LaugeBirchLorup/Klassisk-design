@@ -11,15 +11,17 @@
       />
     </figure>
     <h1
-      class="hero-text text-4xl leading-12 md:text-5xl lg:text-7xl lg:leading-[110px] text-white absolute hero-text"
+      class="hero-text text-4xl leading-12 md:text-5xl lg:text-6xl lg:leading-[81px] text-white absolute hero-text"
     >
       Udforsk istandsatte danske møbel klassikere
     </h1>
-    <button
-      class="hero-button rounded-full px-8 bg-white text-black p-3 m-auto text-sm sm:p-4"
-    >
-      SE MERE HER
-    </button>
+    <Nuxt-link class="cursor-pointer" to="/products">
+      <button
+        class="hero-button rounded-full px-10 w-[80%] md:w-fit bg-white text-black p-4 m-auto text-sm sm:p-4"
+      >
+        SE MERE HER
+      </button>
+    </Nuxt-link>
   </div>
 </template>
 
