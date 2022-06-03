@@ -46,7 +46,7 @@ export default {
   },
   pwa: {
     icon: {
-      iconSrc: 'favicon.ico',
+      iconSrc: 'icon.png',
     }
   },
 
