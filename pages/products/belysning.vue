@@ -36,7 +36,7 @@
             >Sofaer</Button
           >
         </Nuxt-link>
-        <Nuxt-link to="./belysning">
+        <Nuxt-link to="/products">
           <Button class="bg-black text-white shadow-sm px-12 p-4 rounded-full"
             >Belysning</Button
           >
@@ -48,12 +48,12 @@
         </Nuxt-link>
       </div>
       <div
-        class="flex flex-col m-auto gap-6 flex-wrap mt-12 mb-12"
+        class="flex flex-col m-auto gap-6 mt-12 mb-12"
         v-for="product in products"
         :key="product.id"
       >
         <div
-          class="flex flex-wrap w-full"
+          class="flex w-full "
           v-if="product.productType === 'Belysning'"
         >
           <Nuxt-link
@@ -68,7 +68,7 @@
             <h2 class="mt-3 price">{{ product.variants[0].price }} DKK</h2>
           </Nuxt-link>
         </div>
-      </div>
+        </div>
     </div>
     <div class="flex justify-center my-12">
       <button

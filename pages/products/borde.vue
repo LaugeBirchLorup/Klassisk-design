@@ -26,7 +26,7 @@
             >Stole</Button
           >
         </Nuxt-link>
-        <Nuxt-link to="./borde">
+        <Nuxt-link to="/products">
           <Button class="bg-black text-white shadow-sm px-12 p-4 rounded-full"
             >Borde</Button
           >

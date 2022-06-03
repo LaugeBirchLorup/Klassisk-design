@@ -13,8 +13,8 @@
             <nuxt-link to="/istandsaettelse">
               <li @click="toggleMobileNavigation()">Istandsættelse</li>
             </nuxt-link>
-            <nuxt-link to="/kontakt">
-              <li @click="toggleMobileNavigation()">Kontakt</li>
+            <nuxt-link to="/about">
+              <li @click="toggleMobileNavigation()">Om os</li>
             </nuxt-link>
           </ol>
         </div>
@@ -36,9 +36,13 @@
         </div>
         <div class="smaller_menu__items mt-12">
           <ol>
-            <li class="mb-3">Din Kurv</li>
-            <li class="mb-3">Kontakt Os</li>
-            <li class="mb-3">Legal</li>
+            <nuxt-link to="kontakt" >
+            <li class="mb-3" @click="toggleMobileNavigation()">Kontakt Os</li>
+            </nuxt-link>
+            <li class="mb-3">Betingelser</li>
+            <nuxt-link to="">
+            <li class="mb-3">Person data politik</li>
+            </nuxt-link>
           </ol>
         </div>
       </div>

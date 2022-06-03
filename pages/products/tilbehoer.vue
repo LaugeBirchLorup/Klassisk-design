@@ -41,7 +41,7 @@
             >Belysning</Button
           >
         </Nuxt-link>
-        <Nuxt-link to="./tilbehoer">
+        <Nuxt-link to="/products">
           <Button class="bg-black text-white shadow-sm px-12 p-4 rounded-full"
             >Accessories</Button
           >

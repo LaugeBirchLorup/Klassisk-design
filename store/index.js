@@ -35,7 +35,7 @@ export default {
                 },
             ]
             if (!state.checkout.id) {
-                console.log('# Checkout does not exist! Creating a new one.')
+                console.log('# Denne checkout findes ikke, der bliver lavet en ny')
                 await dispatch('createCheckout')
             }
             await this.$shopify.checkout
@@ -57,10 +57,9 @@ export default {
                 })
         },
         async createCheckout({ commit, state }) {
-            commit('UPDATE_LOADING', true)
             await this.$shopify.checkout.create().then((checkout) => {
                 commit('UPDATE_CHECKOUT', checkout)
-                commit('UPDATE_LOADING', false)
+               
             })
         },
 

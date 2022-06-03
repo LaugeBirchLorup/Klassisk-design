@@ -21,7 +21,7 @@
       <div
         class="page-container w-full h-full mt-3 flex gap-3 overflow-x-scroll hidescrollbar md:justify-center md:gap-9"
       >
-        <Nuxt-link to="./stole">
+        <Nuxt-link to="/products">
           <Button class="bg-black text-white shadow-sm px-12 p-4 rounded-full"
             >Stole</Button
           >

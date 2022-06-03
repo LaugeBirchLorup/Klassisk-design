@@ -37,8 +37,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['nuxt-shopify',
-  '@nuxtjs/pwa'
+  modules: ['nuxt-shopify'
   ],
   shopify: {
     domain: process.env.SHOPIFY_DOMAIN,
@@ -49,7 +48,7 @@ export default {
     icon: {
       iconSrc: '/favicon',
     }
-  }
+  },
 
   build: {
   },

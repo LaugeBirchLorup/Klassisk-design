@@ -31,7 +31,9 @@
           arbejder intensivt for, at vores kunder ender med en kavalitativ og
           gennemført restauration eller istandsættelse.r det varme og sjæl.
         </p>
+        <nuxt-link to="kontakt">
         <button class="cta-button">Kom i kontakt med os her</button>
+      </nuxt-link>  
       </div>
     </div>
   </div>

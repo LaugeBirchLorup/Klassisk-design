@@ -31,7 +31,7 @@
             >Borde</Button
           >
         </Nuxt-link>
-        <Nuxt-link to="./sofaer">
+        <Nuxt-link to="/products">
           <Button class="bg-black text-white shadow-sm px-12 p-4 rounded-full"
             >Sofaer</Button
           >

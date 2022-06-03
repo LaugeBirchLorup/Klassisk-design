@@ -2,15 +2,17 @@
   <footer class="sm:p-6 bg-black h-full py-6">
     <div class="md:flex md:justify-between page-container mt-12 mb-16">
       <div class="mb-12 md:mb-0 mt-12 md:mt-0">
+        <nuxt-link to="/">
         <span
           class="text-left text-2xl font-semibold whitespace-nowrap text-white mb-12"
           >KLASSISK DESIGN</span
         >
+        </nuxt-link>
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2 mr-0">
         <div class="md:ml-4">
           <a href="../products">
-            <h2 class="mb-4 font-semibold uppercase text-white">SHOP</h2>
+            <h2 class="mb-4 font-semibold uppercase text-white hover:underline">SHOP</h2>
           </a>
           <ul class="font-semibold text-white">
             <li class="mb-4">
@@ -25,7 +27,7 @@
         </div>
         <div class="md:ml-4 ml-12">
           <a href="../about">
-            <h2 class="mb-4 font-semibold uppercase text-white">OM OS</h2>
+            <h2 class="mb-4 font-semibold hover:underline uppercase text-white">OM OS</h2>
           </a>
           <ul class="text-white font-semibold">
             <li class="mb-4">
@@ -44,7 +46,7 @@
     >
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
         >© 2022
-        <a href="" class="hover:underline">KLASSISK DESIGN™</a>
+        <a href="/" class="hover:underline">KLASSISK DESIGN™</a>
         - All Rights Reserved.
       </span>
       <div class="flex mt-0 ml-2 md:mt-4 space-x-6 sm:justify-center sm:mt-0">
