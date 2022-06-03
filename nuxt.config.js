@@ -33,11 +33,14 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/pwa',
+    
     
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['nuxt-shopify'
+  modules: ['nuxt-shopify',
+  
   ],
   shopify: {
     domain: process.env.SHOPIFY_DOMAIN,
@@ -46,7 +49,7 @@ export default {
   },
   pwa: {
     icon: {
-      iconSrc: 'icon.png',
+      source: 'static/icon.png'
     }
   },
 
