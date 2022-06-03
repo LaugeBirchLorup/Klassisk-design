@@ -33,16 +33,23 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['nuxt-shopify'
+  modules: ['nuxt-shopify',
+  '@nuxtjs/pwa'
   ],
   shopify: {
     domain: process.env.SHOPIFY_DOMAIN,
     storefrontAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
     unoptimized: true
   },
+  pwa: {
+    icon: {
+      iconSrc: '/favicon',
+    }
+  }
 
   build: {
   },
