@@ -45,12 +45,12 @@
         >
           <div class="item-container flex gap-6 w-full">
             <div class="image">
-              <img :src="item.variant.image.src" class="w-36 h-36" />
+              <img :src="item.variant.image.src" class="w-40 h-40 object-cover" />
             </div>
             <div class="text">
-              <h1 class="item-title text-left">{{ item.title }}</h1>
+              <h1 class="item-title text-left text-2xl">{{ item.title }}</h1>
 
-              <h2 class="price mb-12">{{ item.variant.price }} DKK</h2>
+              <h2 class="price mb-9 lg:md-12">{{ item.variant.price }} DKK</h2>
               <div class="actions flex justify-between">
                 <div
                   class="count rounded-full bg-gray-500 w-6 h-6 text-white flex items-center justify-center"
@@ -118,12 +118,11 @@ export default {
 .yourorder {
   font-family: var(--secondaryFont);
   font-weight: 400;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 76px;
 }
 .item-title {
   font-family: var(--secondaryFont);
-  font-size: 32px;
 
   font-weight: 400;
 }

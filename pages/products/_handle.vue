@@ -11,8 +11,8 @@
         />
       </div>
       <div class="content-contianer w-full h-full md:w-[40rem]">
-        <h3 class="category text-lg mb-3">Stol</h3>
-        <h1 class="mainTitle mb-3">{{ product.title }}</h1>
+        <h3 class="category text-lg lg:mb-3">Stol</h3>
+        <h1 class="text-4xl mainTitle lg:text-6xl leading-[70px] lg:mb-3">{{ product.title }}</h1>
         <p class="description mb-6">
           {{ product.description }}
         </p>
@@ -48,8 +48,7 @@ export default {
 <style lang="scss">
 .mainTitle {
   font-family: var(--secondaryFont);
-  font-size: 48px;
-  line-height: 38px;
+
   text-transform: uppercase;
   font-weight: bold;
 }
