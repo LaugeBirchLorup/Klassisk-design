@@ -55,9 +55,6 @@ export default {
 
   build: {
   },
-  router: {
-    middleware: 'checkout',
-  },
 
   server: {
     port: 8000, // default: 3000     
