@@ -14,7 +14,7 @@
 
       <a
         href="mailto: contact@klassisk-design.com"
-        class="aboutTekst text-blue-600 visited:text-purple-600"
+        class="aboutTekst text-blue-600 visited:text-purple-600 p-5"
       >
         contact@klassisk-design.com
       </a>
@@ -23,7 +23,7 @@
 
       <a
         href="Tel: +4545281950"
-        class="aboutTekst text-blue-600 visited:text-purple-600"
+        class="aboutTekst text-blue-600 visited:text-purple-600 p-5"
         >+ 45 28 19 50</a
       >
 
@@ -36,7 +36,7 @@
       <a
         href="https://www.facebook.com/klassiskdesign"
         target="_blank"
-        class="aboutTekst text-blue-600 visited:text-purple-600"
+        class="aboutTekst text-blue-600 visited:text-purple-600 p-5"
         >Facebook</a
       >
       <br />
@@ -44,7 +44,7 @@
       <a
         href="https://www.instagram.com/klassiskdesign/"
         target="_blank"
-        class="aboutTekst text-blue-600 visited:text-purple-600"
+        class="aboutTekst text-blue-600 visited:text-purple-600 p-5"
         >Instagram</a
       >
     </div>
