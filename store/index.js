@@ -22,11 +22,6 @@ export default {
         setShowCart({ commit }, showCart) {
             commit('SET_SHOW_CART', showCart)
         },
-        async createCheckout({ state, commit }) {
-            await this.$shopify.checkout.create().then((checkout) => {
-                commit('UPDATE_CHECKOUT', checkout)
-            })
-        },
         async addItem({ commit, state, dispatch }, variantId) {
             const lineItemsToAdd = [
                 {
@@ -62,11 +57,6 @@ export default {
                
             })
         },
-
-
-
-
-
     },
 
     mutations: {
